@@ -45,8 +45,8 @@ int main(){
       break;
     case 2:
       for (i = 0; (i < 100 && str[i] != '\0'); i++){
-        // kunci untuk enkripsi dikurangin terhadap nilai ASCII
-        // (kecuali spasi, tidak dienkripsi)
+        // kunci untuk dekripsi dikurangin terhadap nilai ASCII
+        // (kecuali spasi, tidak didekripsi)
         if (str[i] != ascii_spasi){
           str[i] = str[i] - kunci;
           // apakah hasil pengurangan melewati nilai ASCII untuk alfabet?
